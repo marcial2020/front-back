@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Shopping</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="brand">
+                <button onclick="openMenu()">
+                    &#9776;
+                </button>
+                <a href="index.html">MM Shopping</a>
+            </div>
+            <div class="header-links">
+                <a href="cart.html">Cart</a>
+                <a href="signin.html">Sign In</a>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <h3 class="text-capitalize">shopping categories</h3>
+            <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+            <ul>
+                <li>
+                    <a href="index.html" class="text-capitalize">samsung</a>
+                </li>
+                <li>
+                    <a href="index.html" class="text-capitalize">lg</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="content">
+                <ul class="products">
+                    <li class="product">
+                        <img class="product-image" src="/template/images/samsung note9.jpg" alt="product">
+                        <div class="product-name text-capitalize">
+                            <a href="product.html">samsung galaxy note 9</a>
+                        </div>
+                        <div class="product-brand text-capitalize">samsung</div>
+                        <div class="product-price text-capitalize">$300</div>
+                        <div class="product-rating text-capitalize">4.5 stars (2500 reviews)</div>
+    
+                    </li>
+                    <li class="product">
+                        <img class="product-image" src="/template/images/samsung s7.jpg" alt="product">
+                        <div class="product-name text-capitalize">
+                            <a href="product.html">samsung galaxy s7</a>
+                        </div>
+                        <div class="product-brand text-capitalize">samsung</div>
+                        <div class="product-price text-capitalize">$90</div>
+                        <div class="product-rating text-capitalize">4.5 stars (1000 reviews)</div>
+    
+                    </li>
+                    <li class="product">
+                        <img class="product-image" src="/template/images/lgg6.jpg" alt="product">
+                        <div class="product-name text-capitalize">
+                            <a href="product.html">lg g6</a>
+                        </div>
+                        <div class="product-brand text-capitalize">lg</div>
+                        <div class="product-price text-capitalize">$100</div>
+                        <div class="product-rating text-capitalize">4.1 stars (550 reviews)</div>
+    
+                    </li>
+                    <li class="product">
+                        <img class="product-image" src="/template/images/moto z force2.jpg" alt="product">
+                        <div class="product-name text-capitalize">
+                            <a href="product.html">motorola z-force 2</a>
+                        </div>
+                        <div class="product-brand text-capitalize">motorola</div>
+                        <div class="product-price text-capitalize">$90</div>
+                        <div class="product-rating text-capitalize">3.5 stars (200 reviews)</div>
+    
+                    </li>
+                    <li class="product">
+                        <img class="product-image" src="/template/images/googlePixel.jpg" alt="product">
+                        <div class="product-name text-capitalize">
+                            <a href="product.html">googlePixel</a>
+                        </div>
+                        <div class="product-brand text-capitalize">google</div>
+                        <div class="product-price text-capitalize">$75</div>
+                        <div class="product-rating text-capitalize">4.2 stars (740 reviews)</div>
+    
+                    </li>
+                    <li class="product">
+                        <img class="product-image" src="/template/images/nokia3310.jpg" alt="product">
+                        <div class="product-name text-capitalize">
+                            <a href="product.html">nokia 3310 3g</a>
+                        </div>
+                        <div class="product-brand text-capitalize">nokia</div>
+                        <div class="product-price text-capitalize">$50</div>
+                        <div class="product-rating text-capitalize">3.9 stars (300 reviews)</div>
+    
+                    </li>
+    
+    
+                </ul>
+            </div>
+    
+        </main>
+    
+        <footer class="footer">
+            All right reserved
+        </footer>
+    </div>
+    
+    <script>
+        function openMenu() {
+            document.querySelector(".sidebar").classList.add("open");
+        }
+        function closeMenu() {
+            document.querySelector(".sidebar").classList.remove("open");
+        }
+    </script>
+</body>
+</html>
